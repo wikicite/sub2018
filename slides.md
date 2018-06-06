@@ -1,5 +1,4 @@
-# Einführung, Motivation
-
+# Einführung & Motivation
 
 ## Was ist WikiCite?
 
@@ -12,30 +11,25 @@
     * offene Daten (CC0)
 
 
+## Umfang
 
-## Zahlen
-
-* 48 Millionen Wikidata-Einträge
-    * davon 17 Millionen Einträge zu Publikationen
-* 440 Millionen Aussagen in Wikidata
-    * davon 36 Millionen Zitationen
+* 17 von 48 Millionen Wikidata-Einträgen zu Publikationen
+* 36 von 440 Millionen Aussagen in Wikidata Zitationen
 
 ![](https://i.imgur.com/oWFgwUb.jpg){height=60%}
 
 
+## Motivation für Wikipedia
 
+* Aussagen mit Belegen versehen
 
-## Motivation von WikiCite I
-
-* Aussagen in Wikipedia mit Belegen versehen
-
-<img src="https://i.imgur.com/fjhBYvr.png" width="70%" style="border:none; box-shadow:none;"/><img src="https://i.imgur.com/Ce035AQ.png" width="30%" style="border:none; box-shadow:none;"/>
+![](https://i.imgur.com/fjhBYvr.png){width=40%}
+![](https://i.imgur.com/Ce035AQ.png){width=30%}
 
 * Bibliographische Metadaten werden momentan isoliert beim Artikel in jeder Sprachversion separat gespeichert
 
 
-
-## Motivation von WikiCite II
+## Motivation für Wikidata
 
 * Fakten in Wikidata mit Fundstellen belegen
 
@@ -43,91 +37,78 @@
 
 
 
-## Motivation von WikiCite III
+## Motivation für bibliometrische Auswertungen
 
 * Auswertung, Visualisierung von Zitationsdaten
 
-![](https://i.imgur.com/K6nwd2C.jpg)
+![<https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph>](https://i.imgur.com/K6nwd2C.jpg)
 
-https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph
-
+<!-- TODO: screenshot Scholia (Zika-Corpus) -->
 
 
 # Umsetzung von WikiCite
 
+---
 
+<!--## Beispiel: Bibliographische Metadaten in Wikidata-->
 
-## Beispiel: Bibliographische Metadaten in Wikidata
-
-![](https://i.imgur.com/1sm8NKO.jpg){height=80%}
-
-https://www.wikidata.org/wiki/Q30000000
-
+![](https://i.imgur.com/1sm8NKO.jpg){height=100%}
 
 
 ## Wikidata Datenmodell
 
-* IDs: Q30000000
-* Eigenschaften: P31
-* Wikidata Datenmodell ist dynamisch
+* IDs 
+    - [www.wikidata.org/entity/**Q30000000**](http://www.wikidata.org/entity/Q30000000)
+* Eigenschaften
+    - P31 *ist ein(e) / instance of / est ...*
+    - P50 *Autor / author / scriptor ...*
+* Datenmodell ist dynamisch
     * Neue Eigenschaften vorschlagen, diskutieren und erstellen
-    * Eigenschaften zur Löschung vorschlagen, diskutieren und löschen
-
 
 
 ## Tools zur Bearbeitung
 
-* sourceMD: Import Metadaten anhand DOI
-* zotkat: Import aus Zotero (Literaturverwaltung)
-* Mix'n'Match: Abgleich von Personendaten mit externen Identifikatoren
-* OpenRefine 3.0 mit erweiterter Wikidata-Anbindung
+* **sourceMD:** Import Metadaten anhand DOI
+* **zotkat:** Import aus Zotero (Literaturverwaltung)
+* **Mix'n'Match:** Abgleich von Personendaten mit externen Identifikatoren
+* **OpenRefine 3.0** mit erweiterter Wikidata-Anbindung
+* ...
+
+QuickStatements, wikidata-cli ...
 
 
+## Qualitätssicherung
 
-## Beobachtungsliste, Berichte zu Regelverletzungen
-
-* einzelne Einträge in Wikidata können auf die eigenen Beobachtungsliste hinzugefügt werden
-* Benachrichtung bei Änderung dieser Einträge
-* Einschränkungen von Werten oder Links bei bestimmten Eigenschaften
-    * ISBN folgen bestimmten Muster
-    * Autoren müssen Personen oder Organisation sein
+* Eigene Beobachtungslist für Wikidata-Einträge mit Benachrichtigung bei Änderungen
+* Einschränkungen von Werten von Eigenschaften
+    * ISBN (P.../P...) folgen bestimmten Muster
+    * Autoren (P50) müssen Personen oder Organisation sein
 * Regelverletzungen werden regelmässig protokolliert (constraint reports) und können dann verbessert werden
 
 
 
-## Verlinkung in Wikidata
+## Normdaten-Verlinkung 
 
-* Verknüpfungen in Wikidata = Normdatenverknüpfungen
-* Ketten bzw. Netze von Verknüpfungen sind möglich (z.B. Buch -> Autor -> Arbeitgeber -> Land)
+* Wikidata ist selbst eine universelle Normdatei
 
+* Verknüpfungen mit externen Einträgen
+    * DOI, ISBN, PMID, arXiv-ID, ... (Publikationen)
+    * GND, VIAF, ORCID, dblp-ID, ... (Autoren, Organisationen...)
+    * Geonames, ... (Orte...)
 
-
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Fnode%20%3FnodeLabel%20%3FnodeImage%20%3FchildNode%20%3FchildNodeLabel%20%3FchildNodeImage%20%3Frgb%20WHERE%20%7B%0A%20%20%7B%0A%20%20%20%20BIND(wd%3AQ30000000%20AS%20%3Fnode)%0A%20%20%20%20%3Fnode%20%3Fp%20%3Fi.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fnode%20wdt%3AP18%20%3FnodeImage.%20%7D%0A%20%20%20%20%3FchildNode%20%3Fx%20%3Fp.%0A%20%20%20%20%3FchildNode%20rdf%3Atype%20wikibase%3AProperty.%0A%20%20%20%20FILTER(STRSTARTS(STR(%3Fi)%2C%20%22http%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ%22))%0A%20%20%20%20FILTER(STRSTARTS(STR(%3FchildNode)%2C%20%22http%3A%2F%2Fwww.wikidata.org%2Fentity%2FP%22))%0A%20%20%7D%0A%20%20UNION%0A%20%20%7B%0A%20%20%20%20BIND(%22EFFBD8%22%20AS%20%3Frgb)%0A%20%20%20%20wd%3AQ30000000%20%3Fp%20%3FchildNode.%0A%20%20%20%20OPTIONAL%20%7B%20%3FchildNode%20wdt%3AP18%20%3FchildNodeImage.%20%7D%0A%20%20%20%20%3Fnode%20%3Fx%20%3Fp.%0A%20%20%20%20%3Fnode%20rdf%3Atype%20wikibase%3AProperty.%0A%20%20%20%20FILTER(STRSTARTS(STR(%3FchildNode)%2C%20%22http%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ%22))%0A%20%20%7D%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fnode%20wdt%3AP18%20%3FnodeImage.%0A%20%20%20%20%3FchildNode%20wdt%3AP18%20%3FchildNodeImage.%0A%20%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22de%22.%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-
+X von Y Wikidata-Eigenschaften dienen der Verlinkung mit anderen Datenbanken
 
 
 ## Abfragemöglichkeiten
 
-* https://query.wikidata.org/
+* <https://query.wikidata.org/> (SPARQL-Editor)
 * Beispielabfragen
-    * Bücher zusammen von Sohn und Vater geschrieben: http://tinyurl.com/y9ucy834 
-    * Autoren, deren Werke 2018 gemeinfrei wurden: http://tinyurl.com/yc8v6l9c
-    * Werke von neu-gekrönten Nobelpreisträgern
-    * Meist zitierte Wissenschaftlerinnen: http://tinyurl.com/y8ell8nw
-
-
-
-## Verknüpfungen mit externen Einträgen -> weglassen?
-
-* DOI, ISBN, PMID, arXiv-ID, ...
-* GND, VIAF, ORCID, dblp-ID, ...
-* Geonames, ...
-
+    * Bücher zusammen von Elter(n) und Kinder(n) geschrieben: <http://tinyurl.com/y7oe8uo8>
+    * Autoren, deren Werke 2018 gemeinfrei wurden: <http://tinyurl.com/yc8v6l9c>
+    * Meist zitierte Wissenschaftlerinnen: <http://tinyurl.com/y8ell8nw>>
 
 
 # Perspektiven für Bibliotheken
-
-
 
 ## Bibliotheksdaten in Wikidata
 
@@ -158,4 +139,8 @@ https://www.wikidata.org/wiki/Q30000000
 
 
 
-# Fragen, Diskussion, Antworten :question: 
+# Fragen / Diskussion / Antworten ?
+
+# Weiterführende Links
+
+...

@@ -1,12 +1,12 @@
 ---
 title: WikiCite als kollaborativer Ansatz für offene Zitationsdaten
-subtitle: Vortrag auf dem Bibliothek*tag 2018
+subtitle: Vortrag auf dem Bibliothek*tag Berlin
 author:
   - Philipp Zumstein (UB Mannheim)
   - Jakob Voß (VZG)
 date: 2018-06-13
-background-image: background.png
 classoption:
   - aspectratio=169
 fontsize: 16pt
+titlegraphic: img/vzg-logo.png
 ---
