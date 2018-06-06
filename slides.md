@@ -1,8 +1,4 @@
-# WikiCite als kollaborativer Ansatz für offene Zitationsdaten
-
-
 # Einführung, Motivation
-
 
 
 ## Was ist WikiCite?
@@ -24,7 +20,7 @@
 * 440 Millionen Aussagen in Wikidata
     * davon 36 Millionen Zitationen
 
-![](https://i.imgur.com/oWFgwUb.jpg)
+![](https://i.imgur.com/oWFgwUb.jpg){height=60%}
 
 
 
@@ -63,7 +59,7 @@ https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph
 
 ## Beispiel: Bibliographische Metadaten in Wikidata
 
-![](https://i.imgur.com/1sm8NKO.jpg)
+![](https://i.imgur.com/1sm8NKO.jpg){height=80%}
 
 https://www.wikidata.org/wiki/Q30000000
 
