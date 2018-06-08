@@ -13,20 +13,22 @@
 
 ## Umfang
 
-* 17 von 48 Millionen Wikidata-Einträgen zu Publikationen
-* 36 von 440 Millionen Aussagen in Wikidata Zitationen
+* 17/48 Millionen Wikidata-Einträgen zu Publikationen
+* 36/440 Millionen Aussagen in Wikidata Zitationen
 
-![](https://i.imgur.com/oWFgwUb.jpg){height=60%}
+![](img/wikicite-stats-annotated.png){height=70%}
 
 
 ## Motivation für Wikipedia
 
 * Aussagen mit Belegen versehen
+* Bibliographische Metadaten zentral für alle Artikel und Sprachversionen
 
-![](https://i.imgur.com/fjhBYvr.png){width=40%}
-![](https://i.imgur.com/Ce035AQ.png){width=30%}
+![](img/Wikipedia-Belege.png){width=80%}
 
-* Bibliographische Metadaten werden momentan isoliert beim Artikel in jeder Sprachversion separat gespeichert
+\centering
+
+![](img/Wikipedia-Belege-Fussnoten.png){width=30%}
 
 
 ## Motivation für Wikidata
@@ -36,23 +38,28 @@
 ![](https://i.imgur.com/JEZolCU.jpg)
 
 
+## Motivation für bibliometrische Auswertungen
+
+* Auswertung und Visualisierung von Zitationsdaten
+
+![](img/Scholia-Koautorengraph-Zika-Korpus.jpg)
+
+<!-- https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph -->
+
 
 ## Motivation für bibliometrische Auswertungen
 
-* Auswertung, Visualisierung von Zitationsdaten
+* Auswertung und Visualisierung von Publikationsdaten
 
-![<https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph>](https://i.imgur.com/K6nwd2C.jpg)
+![](img/scholia-organization-example.png)
 
-<!-- TODO: screenshot Scholia (Zika-Corpus) -->
-
+<!-- https://tools.wmflabs.org/scholia/organization/Q1269766 -->
 
 # Umsetzung von WikiCite
 
 ---
 
-<!--## Beispiel: Bibliographische Metadaten in Wikidata-->
-
-![](https://i.imgur.com/1sm8NKO.jpg){height=100%}
+![](img/wikicite-annotated-item-de.png){width=100%}
 
 
 ## Wikidata Datenmodell
