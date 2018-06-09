@@ -73,7 +73,7 @@
 
 ---
 
-![](img/wikicite-annotated-item-de.png){width=100%}
+![](img/wikicite-annotated-item-de.png){width=80%}
 
 
 ## Wikidata Datenmodell
@@ -102,7 +102,7 @@ QuickStatements, wikidata-cli ...
 
 * Eigene Beobachtungslist für Wikidata-Einträge mit Benachrichtigung bei Änderungen
 * Einschränkungen von Werten von Eigenschaften
-    * ISBN (P.../P...) folgen bestimmten Muster
+    * ISBN (P212/P957) folgen bestimmten Muster
     * Autoren (P50) müssen Personen oder Organisation sein
 * Regelverletzungen werden regelmässig protokolliert (constraint reports) und können dann verbessert werden
 
@@ -131,13 +131,21 @@ X von Y Wikidata-Eigenschaften dienen der Verlinkung mit anderen Datenbanken
 
 # Perspektiven für Bibliotheken
 
+<!--
 ## Bibliotheksdaten in Wikidata
 
 * Wie können Bibliotheksdaten für Wikidata genutzt werden?
     * Verknüpfungen über externe Verweise?
     * Exportformate, APIs bereitstellen?
 * sich bei Datenmodellierung einbringen?
+-->
 
+## Nachnutzung von Daten aus Wikidata
+
+* Kataloganreicherungen bei Normdaten
+* mehrsprachige Suche nach Schlagwörtern
+* Artikelindex für Discovery aus Wikidata?
+* Kataloganreicherungen mit offenen Zitationsdaten?
 
 
 ## Katalogisierungstools
@@ -156,12 +164,14 @@ X von Y Wikidata-Eigenschaften dienen der Verlinkung mit anderen Datenbanken
 * Katalogisierung von Zitationen
     * Können Bibliotheken zu offenen Zitationsdaten beitragen?
     * Zitationsdaten in Verbundkatalog speichern?
-    * Linked Open Citation Database (LOC-DB)
+    * Linked Open Citation Database (LOC-DB): [Clip ![](https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_1280.png){height=15px}](https://www.youtube.com/watch?v=k8ST-bX4BKs)
 
 
 
 # Fragen / Diskussion / Antworten ?
 
+<!--
 # Weiterführende Links
 
 ...
+-->
