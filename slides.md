@@ -2,14 +2,19 @@
 
 ## Was ist WikiCite?
 
-* Projekt + Konferenzreihe + Community
-* Kontext: Wikipedia, Wikidata, Wikisource, ...
-* Ziel: freie bibliographische Datenbank in Wikidata
-    * bibliographische Metadaten + Zitationsdaten
-    * Katalogisierung von selbstständigen + unselbständigen Werken + Beziehungen
-    * kollaborativ
-    * offene Daten (CC0)
+![](img/wikicite-item.png)
 
+<!-- Kontext: Wikipedia, Wikidata, Wikisource, ...-->
+
+## Ziele von WikiCite
+
+* Freie bibliographische Datenbank in Wikidata
+    * Bibliographische Metadaten
+    * Zitationsdaten
+
+* Katalogisierung selbstständiger + unselbständiger Werke + Beziehungen
+    * kollaborativ (Social Cataloging)
+    * offene Daten (CC0)
 
 ## Umfang
 
@@ -17,7 +22,6 @@
 * 36/440 Millionen Aussagen in Wikidata Zitationen
 
 ![](img/wikicite-stats-annotated.png){height=70%}
-
 
 ## Motivation für Wikipedia
 
@@ -35,7 +39,7 @@
 
 * Fakten in Wikidata mit Fundstellen belegen
 
-![](https://i.imgur.com/JEZolCU.jpg)
+![](img/fundstelle-wikidata-berlin.jpg)
 
 
 ## Motivation für bibliometrische Auswertungen
