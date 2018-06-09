@@ -59,7 +59,7 @@
 
 [![](img/scholia-organization-example.png){height=70%}](https://tools.wmflabs.org/scholia/organization/Q1269766#Page%20production)
 
-Anzahl produzierter Seiten von Publikationen mit Autoren der DTU
+\tiny _Abb. Screenshot von Scholia zur Anzahl produzierter Seiten von Publikationen mit Autoren der DTU_
 
 
 ## Motivation für bibliometrische Auswertungen
