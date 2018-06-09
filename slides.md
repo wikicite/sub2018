@@ -16,48 +16,58 @@
     * kollaborativ (Social Cataloging)
     * offene Daten (CC0)
 
+
 ## Umfang
 
-* 17/48 Millionen Wikidata-Einträgen zu Publikationen
-* 36/440 Millionen Aussagen in Wikidata Zitationen
+* **Publikationen**: 19 Millionen Wikidata-Einträgen (39% von Wikidata)
+* **Zitationen**: 46 Millionen Zitationen in Wikidata (10% von Wikidata)
 
-![](img/wikicite-stats-annotated.png){height=70%}
+[![WikiCite Statistik](img/wikicite-stats-annotated.png){height=70%}](http://wikicite.org/statistics.html)
 
 ## Motivation für Wikipedia
 
-* Aussagen mit Belegen versehen
-* Bibliographische Metadaten zentral für alle Artikel und Sprachversionen
+* Aussagen mit Belegen versehen, z.B.
 
-![](img/Wikipedia-Belege.png){width=80%}
+![](img/Wikipedia-Belege.png)
 
 \centering
 
-![](img/Wikipedia-Belege-Fussnoten.png){width=30%}
+![](img/Wikipedia-Belege-Fussnoten.png){height=40%}
+
+* Bibliographische Metadaten zentral für alle Artikel und Sprachversionen
 
 
 ## Motivation für Wikidata
 
-* Fakten in Wikidata mit Fundstellen belegen
+* Fakten in Wikidata mit Fundstellen belegen, z.B. höchster Punkt in Berlin
 
-![](img/fundstelle-wikidata-berlin.jpg)
+[![](img/fundstelle-wikidata-berlin.jpg)](https://www.wikidata.org/wiki/Q64#P610)
+
+
+<!--
+## Motivation für bibliometrische Auswertungen
+
+* Auswertung und Visualisierung von Zitationsdaten
+
+[![](img/Scholia-Koautorengraph-Zika-Korpus.jpg)](https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph)
+
+-->
+
+## Motivation für bibliometrische Auswertungen
+
+* Auswertung und Visualisierung von Publikationsdaten
+
+[![](img/scholia-organization-example.png){height=70%}](https://tools.wmflabs.org/scholia/organization/Q1269766#Page%20production)
+
+Anzahl produzierter Seiten von Publikationen mit Autoren der DTU
 
 
 ## Motivation für bibliometrische Auswertungen
 
 * Auswertung und Visualisierung von Zitationsdaten
 
-![](img/Scholia-Koautorengraph-Zika-Korpus.jpg)
+[![](img/scholia-citation-graph.png)](https://tools.wmflabs.org/scholia/work/Q24314690)
 
-<!-- https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph -->
-
-
-## Motivation für bibliometrische Auswertungen
-
-* Auswertung und Visualisierung von Publikationsdaten
-
-![](img/scholia-organization-example.png)
-
-<!-- https://tools.wmflabs.org/scholia/organization/Q1269766 -->
 
 # Umsetzung von WikiCite
 
