@@ -24,7 +24,7 @@ WikiCite ; cataloguing of articles ; citation data ; open data ; collaboration
 
 ## Präsentationsfolien
 
-coming soon...
+[PDF](slides.pdf)
 
 ## Lizenz
 

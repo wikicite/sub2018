@@ -2,12 +2,6 @@
 
 ## Was ist WikiCite?
 
-![](img/wikicite-item.png)
-
-<!-- Kontext: Wikipedia, Wikidata, Wikisource, ...-->
-
-## Ziele von WikiCite
-
 * Freie bibliographische Datenbank in Wikidata
     * Bibliographische Metadaten
     * Zitationsdaten
@@ -19,8 +13,8 @@
 
 ## Umfang
 
-* **Publikationen**: 19 Millionen Wikidata-Einträgen (39% von Wikidata)
-* **Zitationen**: 46 Millionen Zitationen in Wikidata (10% von Wikidata)
+* **Publikationen**: 19 Millionen Wikidata-Einträgen <!--(39% von Wikidata)-->
+* **Zitationen**: 46 Millionen Zitationen in Wikidata<!--(10% von Wikidata)-->
 
 [![WikiCite Statistik](img/wikicite-stats-annotated.png){height=70%}](http://wikicite.org/statistics.html)
 
@@ -34,7 +28,7 @@
 
 ![](img/Wikipedia-Belege-Fussnoten.png){height=40%}
 
-* Bibliographische Metadaten zentral für alle Artikel und Sprachversionen
+* Bibl. Metadaten zentral für alle Artikel und Sprachversionen
 
 
 ## Motivation für Wikidata
