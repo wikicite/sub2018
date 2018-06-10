@@ -2,19 +2,26 @@
 
 ## Was ist WikiCite?
 
+* Kontext: Wikipedia, **Wikidata**, Wikisource...
+
+![](img/wikicite-item.png)
+
+
+## Ziele von WikiCite
+
 * Freie bibliographische Datenbank in Wikidata
     * Bibliographische Metadaten
     * Zitationsdaten
 
-* Katalogisierung selbstständiger + unselbständiger Werke + Beziehungen
-    * kollaborativ (Social Cataloging)
+* Selbstständige + unselbständiger Werke + Beziehungen
+    * Kollaborative Katalogisierung (Social Cataloging)
     * offene Daten (CC0)
 
 
 ## Umfang
 
-* **Publikationen**: 19 Millionen Wikidata-Einträgen <!--(39% von Wikidata)-->
-* **Zitationen**: 46 Millionen Zitationen in Wikidata<!--(10% von Wikidata)-->
+* **Publikationen**: 19 Millionen Wikidata-Einträgen (39%)
+* **Zitationen**: 46 Millionen Zitationen in Wikidata (10%)
 
 [![WikiCite Statistik](img/wikicite-stats-annotated.png){height=70%}](http://wikicite.org/statistics.html)
 
@@ -33,7 +40,8 @@
 
 ## Motivation für Wikidata
 
-* Fakten in Wikidata mit Fundstellen belegen, z.B. höchster Punkt in Berlin
+* Fakten in Wikidata mit Fundstellen belegen,\
+  z.B. höchster Punkt in Berlin
 
 [![](img/fundstelle-wikidata-berlin.jpg)](https://www.wikidata.org/wiki/Q64#P610)
 
@@ -67,39 +75,43 @@
 
 ---
 
-![](img/wikicite-annotated-item-de.png){width=80%}
+![](img/wikicite-annotated-item-de.png){width=95%}
 
 
-## Wikidata Datenmodell
+## Wikidata-Datenmodell
 
-* IDs 
+* Item-Identifier 
     - [www.wikidata.org/entity/**Q30000000**](http://www.wikidata.org/entity/Q30000000)
 * Eigenschaften
     - P31 *ist ein(e) / instance of / est ...*
     - P50 *Autor / author / scriptor ...*
+    - ...
 * Datenmodell ist dynamisch
-    * Neue Eigenschaften vorschlagen, diskutieren und erstellen
+    * Neue Eigenschaften vorschlagen + diskutieren
+    * Fragen und Diskussion auf spezifischen Projektseiten\
+      *[Metadata](https://www.wikidata.org/wiki/Wikidata:WikiProject_Source_MetaData),
+      [Books](https://www.wikidata.org/wiki/Wikidata:WikiProject_Books),
+      [Periodicals](https://www.wikidata.org/wiki/Wikidata:WikiProject_Periodicals)...*
 
 
 ## Tools zur Bearbeitung
 
-* **sourceMD:** Import Metadaten anhand DOI
-* **zotkat:** Import aus Zotero (Literaturverwaltung)
-* **Mix'n'Match:** Abgleich von Personendaten mit externen Identifikatoren
+* Direkte Bearbeitung auf Wikidata
+* **sourceMD/fatameh** Import anhand DOI/PMID
+* **zotkat** Import aus Zotero (Literaturverwaltung)
+* **Mix'n'Match:** Abgleich mit externen Identifikatoren
 * **OpenRefine 3.0** mit erweiterter Wikidata-Anbindung
 * ...
-
-QuickStatements, wikidata-cli ...
 
 
 ## Qualitätssicherung
 
 * Eigene Beobachtungslist für Wikidata-Einträge mit Benachrichtigung bei Änderungen
 * Einschränkungen von Werten von Eigenschaften
-    * ISBN (P212/P957) folgen bestimmten Muster
-    * Autoren (P50) müssen Personen oder Organisation sein
-* Regelverletzungen werden regelmässig protokolliert (constraint reports) und können dann verbessert werden
-
+    * *ISBN* (P212/P957) folgen bestimmten Mustern
+    * *Autoren* (P50) müssen Personen oder Organisation sein
+* Regelverletzungen werden protokolliert (constraint reports)\
+  und können dann verbessert werden
 
 
 ## Normdaten-Verlinkung 
@@ -108,31 +120,25 @@ QuickStatements, wikidata-cli ...
 
 * Verknüpfungen mit externen Einträgen
     * DOI, ISBN, PMID, arXiv-ID, ... (Publikationen)
-    * GND, VIAF, ORCID, dblp-ID, ... (Autoren, Organisationen...)
-    * Geonames, ... (Orte...)
+    * GND, VIAF, ORCID, dblp-ID, ... (Autoren...)
+    * ... (Orte, Substanzen, Ereignisse...)
 
-X von Y Wikidata-Eigenschaften dienen der Verlinkung mit anderen Datenbanken
+* 2824 von 4741 Wikidata-Eigenschaften dienen der\
+  Verlinkung mit anderen Datenbanken
 
 
 ## Abfragemöglichkeiten
 
 * <https://query.wikidata.org/> (SPARQL-Editor)
+
 * Beispielabfragen
     * Bücher zusammen von Elter(n) und Kinder(n) geschrieben: <http://tinyurl.com/y7oe8uo8>
     * Autoren, deren Werke 2018 gemeinfrei wurden: <http://tinyurl.com/yc8v6l9c>
-    * Meist zitierte Wissenschaftlerinnen: <http://tinyurl.com/y8ell8nw>>
+    * Meist zitierte Wissenschaftlerinnen: <http://tinyurl.com/y8ell8nw>
 
+* Hilfreich zur Qualitätssicherung
 
 # Perspektiven für Bibliotheken
-
-<!--
-## Bibliotheksdaten in Wikidata
-
-* Wie können Bibliotheksdaten für Wikidata genutzt werden?
-    * Verknüpfungen über externe Verweise?
-    * Exportformate, APIs bereitstellen?
-* sich bei Datenmodellierung einbringen?
--->
 
 ## Nachnutzung von Daten aus Wikidata
 
@@ -142,12 +148,12 @@ X von Y Wikidata-Eigenschaften dienen der Verlinkung mit anderen Datenbanken
 * Kataloganreicherungen mit offenen Zitationsdaten?
 
 
-## Katalogisierungstools
+## Ideen für Katalogisierungstools
 
-* Kann man Ansätze zum Datenerfassen in Wikidata auch bei der Katalogisierung in Bibliotheken adaptieren?
-* Sind nicht auch stärker Tools für Bearbeitungen im Batch gefragt?
+* Können Ansätze zur Datenerfassen in Wikidata auch für die Katalogisierung
+  in Bibliotheken übernommen werden?
+* Sind nicht auch stärker Tools zur Batch-Bearbeitungen gefragt?
 * Was ist mit Kontroll- und Prüftools?
-
 
 
 ## Umfang der Katalogisierung
@@ -158,14 +164,8 @@ X von Y Wikidata-Eigenschaften dienen der Verlinkung mit anderen Datenbanken
 * Katalogisierung von Zitationen
     * Können Bibliotheken zu offenen Zitationsdaten beitragen?
     * Zitationsdaten in Verbundkatalog speichern?
-    * Linked Open Citation Database (LOC-DB): [Clip ![](https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_1280.png){height=15px}](https://www.youtube.com/watch?v=k8ST-bX4BKs)
-
+    * Linked Open Citation Database (LOC-DB): [Clip](https://www.youtube.com/watch?v=k8ST-bX4BKs)
 
 
 # Fragen / Diskussion / Antworten ?
 
-<!--
-# Weiterführende Links
-
-...
--->
