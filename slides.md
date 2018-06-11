@@ -81,7 +81,7 @@
 ## Wikidata-Datenmodell
 
 * Item-Identifier 
-    - [www.wikidata.org/entity/**Q30000000**](http://www.wikidata.org/entity/Q30000000)
+    - [Q30000000](http://www.wikidata.org/entity/Q30000000)
 * Eigenschaften
     - P31 *ist ein(e) / instance of / est ...*
     - P50 *Autor / author / scriptor ...*
@@ -96,7 +96,8 @@
 
 ## Tools zur Bearbeitung
 
-* Direkte Bearbeitung auf Wikidata
+Direkte Bearbeitung auf Wikidata oder...
+
 * **sourceMD/fatameh** Import anhand DOI/PMID
 * **zotkat** Import aus Zotero (Literaturverwaltung)
 * **Mix'n'Match:** Abgleich mit externen Identifikatoren
@@ -106,12 +107,17 @@
 
 ## Qualitätssicherung
 
-* Eigene Beobachtungslist für Wikidata-Einträge mit Benachrichtigung bei Änderungen
+* Eigene Beobachtungslist für Wikidata-Einträge\
+  mit Benachrichtigung bei Änderungen
+
 * Einschränkungen von Werten von Eigenschaften
     * *ISBN* (P212/P957) folgen bestimmten Mustern
     * *Autoren* (P50) müssen Personen oder Organisation sein
+
 * Regelverletzungen werden protokolliert (constraint reports)\
   und können dann verbessert werden
+
+* bottom-up
 
 
 ## Normdaten-Verlinkung 
@@ -121,7 +127,7 @@
 * Verknüpfungen mit externen Einträgen
     * DOI, ISBN, PMID, arXiv-ID, ... (Publikationen)
     * GND, VIAF, ORCID, dblp-ID, ... (Autoren...)
-    * ... (Orte, Substanzen, Ereignisse...)
+    * ...
 
 * 2824 von 4741 Wikidata-Eigenschaften dienen der\
   Verlinkung mit anderen Datenbanken
@@ -137,6 +143,7 @@
     * Meist zitierte Wissenschaftlerinnen: <http://tinyurl.com/y8ell8nw>
 
 * Hilfreich zur Qualitätssicherung
+
 
 # Perspektiven für Bibliotheken
 
