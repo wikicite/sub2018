@@ -1,5 +1,16 @@
 # Einführung & Motivation
 
+## Termine
+
+* Geburtstag von Wikidata
+* Wikibase-Workshop an der DNB
+* Dritte WikiCite-Konferenz
+* ...
+
+<https://wiki.dnb.de/display/GND/Authority+Control+meets+Wikibase>
+
+<https://wikimediafoundation.org/2018/10/24/wikibasenyc-conference/>
+
 ## Was ist WikiCite?
 
 * Kontext: Wikipedia, **Wikidata**, Wikisource...
@@ -173,6 +184,41 @@ Direkte Bearbeitung auf Wikidata oder...
     * Zitationsdaten in Verbundkatalog speichern?
     * Linked Open Citation Database (LOC-DB): [Clip](https://www.youtube.com/watch?v=k8ST-bX4BKs)
 
+## Ausblick
+
+ 
+
+## These: WikiCite ist schneller
+
+------------------- ------------------- ---------------------
+                    GBV/CBS             Wikidata/Wikibase
+------------------- ------------------- ---------------------
+Mit-Katalogisieren  Monate bis Jahre    Minuten
+Neue Kategorie      Monate bis Jahre    Tage bis Wochen
+Gesamtabzug         Wochen bis Monate   Tage bis Wochen
+Tools ausprobieren  ?                   Minuten bis Stunden
+------------------- ------------------- ---------------------
+
+## Qualitätssicherung in WikiCite
+
+* Katalogisierungsregeln im Entstehen
+* Absehbar ebenso ausgefeilt wie bibliothekarische Regelwerke
+* Regeln werden nicht **vor**geschrieben sondern **nach**geprüft
+
+## These: Qualitätssicherung in WikiCite ist nachhaltiger
+
+Bibliotheken        Wikidata
+
+Eingangskontrolle   Beständige Änderungen
+
+Datenkorrekturen
+analyse
+
+ durch Qualitätskontrollen
+
+* Regeln zur Datenanalyse (was ist drin) statt Regeln (was soll rein)
+
+Präskriptiv vs. Deskript
 
 # Fragen / Diskussion / Antworten ?
 
