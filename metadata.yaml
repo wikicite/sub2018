@@ -1,12 +1,12 @@
 ---
-title: WikiCite
+title: WikiCite für Bibliotheken
 author:
   - Jakob Voß (VZG)
 date: |
-    | 25\. Oktober 2018, SUB Göttingen
+    | 26\. Oktober 2018, SUB Göttingen
     | ![](img/cc-by.png) 
 classoption:
   - aspectratio=169
-fontsize: 16pt
+fontsize: 14pt
 institute: '![](img/logos.png)'
 ---
