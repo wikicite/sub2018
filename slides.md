@@ -1,38 +1,92 @@
-# Einführung & Motivation
+# Hintergrund
 
-## Termine
+## Begriffsklärung
 
-* Geburtstag von Wikidata
-* Wikibase-Workshop an der DNB
-* Dritte WikiCite-Konferenz
-* ...
+Wikipedia
+  : Enzyklopädie in Form eines offenen Wikis
 
-<https://wiki.dnb.de/display/GND/Authority+Control+meets+Wikibase>
+Wikidata
+  : Datenbank in Form eines Wikis
 
-<https://wikimediafoundation.org/2018/10/24/wikibasenyc-conference/>
+Wikimedia
+  : Organisation & Community
+
+Wikibase
+  : Erweiterung der Wiki-Software für Wikidata
+
+WikiCite
+  : ???
+
+## Wikidata
+
+* Offene Datenbank in Form eines Wikis
+* Geburtstag am 29. Oktober 2012!
+* Wissensdatenbank und Normdatei für Wikidata u.v.a.m.
+* Basiert auf Software Wikibase
+
+Beispieldatensatz: [Q564783](http://www.wikidata.org/entity/Q564783) (SUB Göttingen)
+
+## Wikibase-Datenmodell
+
+* Item-Identifier 
+    - [Q30000000](http://www.wikidata.org/entity/Q30000000)
+
+* Eigenschaften
+    - [P31](http://www.wikidata.org/entity/Q31) *ist ein(e) / instance of / est ...*
+    - [P50](http://www.wikidata.org/entity/P50) *Autor / author / scriptor ...*
+    - ...
+
+* Qualifikatoren & Belege
+
+* Constraints als Aussagen über Eigenschaften (optional!)
+
+---
+
+![](img/wikicite-annotated-item-de.png){width=95%}
+
+
+## Wikibase
+
+* Wikisoftware für Wissensdatenbanken, insbesondere Wikidata
+
+* Ontologie (Eigenschaften & Constraints) als Teil des Wiki
+
+* APIs und Programmbibliotheken
+
+* Zunehmend auch zur Erfassung in GLAM-Einrichtungen
+
+    * [FactGrid](https://blog.factgrid.de/) (Geschichtswissenchaft, Erfurt),
+      siehe [Blogartikel](https://blog.wikimedia.de/2018/08/31/many-faces-of-wikibase-die-geschichte-der-illuminaten-als-datenbank-erschliessen/)
+    * [Rhizome](https://catalog.rhizome.org/) (Digital Preservation, New York)
+    * Workshop [Authority Control meets Wikibase](https://wiki.dnb.de/display/GND/Authority+Control+meets+Wikibase) am 29. Oktober 2018 an der DNB
+
+
+# Warum WikiCite?
 
 ## Was ist WikiCite?
 
-* Kontext: Wikipedia, **Wikidata**, Wikisource...
+<http://www.wikidata.org/entity/Q30035267>
 
 ![](img/wikicite-item.png)
-
 
 ## Ziele von WikiCite
 
 * Freie bibliographische Datenbank in Wikidata
+
     * Bibliographische Metadaten
     * Zitationsdaten
 
 * Selbstständige + unselbständiger Werke + Beziehungen
+
     * Kollaborative Katalogisierung (Social Cataloging)
     * offene Daten (CC0)
 
+<http://wikicite.org/>
 
 ## Umfang
 
-* **Publikationen**: 19 Millionen Wikidata-Einträgen (39%)
-* **Zitationen**: 46 Millionen Zitationen in Wikidata (10%)
+* **Publikationen**: 19 Millionen Wikidata-Einträgen (38%)
+* **Zitationen**: ~~46~~ 120 Millionen Zitationen in Wikidata
 
 [![WikiCite Statistik](img/wikicite-stats-annotated.png){height=70%}](http://wikicite.org/statistics.html)
 
@@ -48,7 +102,6 @@
 
 * Bibl. Metadaten zentral für alle Artikel und Sprachversionen
 
-
 ## Motivation für Wikidata
 
 * Fakten in Wikidata mit Fundstellen belegen,\
@@ -56,17 +109,7 @@
 
 [![](img/fundstelle-wikidata-berlin.jpg)](https://www.wikidata.org/wiki/Q64#P610)
 
-
-<!--
-## Motivation für bibliometrische Auswertungen
-
-* Auswertung und Visualisierung von Zitationsdaten
-
-[![](img/Scholia-Koautorengraph-Zika-Korpus.jpg)](https://tools.wmflabs.org/scholia/topic/Q202864#Co-author%20graph)
-
--->
-
-## Motivation für bibliometrische Auswertungen
+## Motivation für die Wissenschaft
 
 * Auswertung und Visualisierung von Publikationsdaten
 
@@ -74,47 +117,45 @@
 
 \tiny _Abb. Screenshot von Scholia zur Anzahl produzierter Seiten von Publikationen mit Autoren der DTU_
 
-
-## Motivation für bibliometrische Auswertungen
+## Motivation für die Wissenschaft
 
 * Auswertung und Visualisierung von Zitationsdaten
 
 [![](img/scholia-citation-graph.png)](https://tools.wmflabs.org/scholia/work/Q24314690)
 
+## Vorzeige-Projekt
+
+Scholia: <https://tools.wmflabs.org/scholia/>
+
 
 # Umsetzung von WikiCite
 
----
+## Community
 
-![](img/wikicite-annotated-item-de.png){width=95%}
+* Mailingliste, Diskussionsseiten, Konferenzen...
+* Direkte Aktion
+* Diskussion von Modellierungsfragen
 
+## Werkzeuge
 
-## Wikidata-Datenmodell
-
-* Item-Identifier 
-    - [Q30000000](http://www.wikidata.org/entity/Q30000000)
-* Eigenschaften
-    - P31 *ist ein(e) / instance of / est ...*
-    - P50 *Autor / author / scriptor ...*
-    - ...
-* Datenmodell ist dynamisch
-    * Neue Eigenschaften vorschlagen + diskutieren
-    * Fragen und Diskussion auf spezifischen Projektseiten\
-      *[Metadata](https://www.wikidata.org/wiki/Wikidata:WikiProject_Source_MetaData),
-      [Books](https://www.wikidata.org/wiki/Wikidata:WikiProject_Books),
-      [Periodicals](https://www.wikidata.org/wiki/Wikidata:WikiProject_Periodicals)...*
-
-
-## Tools zur Bearbeitung
-
-Direkte Bearbeitung auf Wikidata oder...
-
-* **sourceMD/fatameh** Import anhand DOI/PMID
+* **sourceMD, fatameh...** Import anhand DOI/PMID
 * **zotkat** Import aus Zotero (Literaturverwaltung)
+* **citation-js** Export aus Wikidata
 * **Mix'n'Match:** Abgleich mit externen Identifikatoren
 * **OpenRefine 3.0** mit erweiterter Wikidata-Anbindung
 * ...
 
+## Normdaten-Verlinkung 
+
+* Wikidata ist selbst eine universelle Normdatei
+
+* Verknüpfungen mit externen Einträgen
+    * DOI, ISBN, PMID, arXiv-ID, ... (Publikationen)
+    * GND, VIAF, ORCID, dblp-ID, ... (Autoren...)
+    * ...
+
+* etwa 2/3 (3150) aller Wikidata-Eigenschaften dienen der\
+  Verlinkung mit anderen Datenbanken
 
 ## Qualitätssicherung
 
@@ -128,21 +169,7 @@ Direkte Bearbeitung auf Wikidata oder...
 * Regelverletzungen werden protokolliert (constraint reports)\
   und können dann verbessert werden
 
-* bottom-up
-
-
-## Normdaten-Verlinkung 
-
-* Wikidata ist selbst eine universelle Normdatei
-
-* Verknüpfungen mit externen Einträgen
-    * DOI, ISBN, PMID, arXiv-ID, ... (Publikationen)
-    * GND, VIAF, ORCID, dblp-ID, ... (Autoren...)
-    * ...
-
-* 2824 von 4741 Wikidata-Eigenschaften dienen der\
-  Verlinkung mit anderen Datenbanken
-
+* bottom-up statt top-down!
 
 ## Abfragemöglichkeiten
 
@@ -168,27 +195,17 @@ Direkte Bearbeitung auf Wikidata oder...
 
 ## Ideen für Katalogisierungstools
 
-* Können Ansätze zur Datenerfassen in Wikidata auch für die Katalogisierung
-  in Bibliotheken übernommen werden?
-* Sind nicht auch stärker Tools zur Batch-Bearbeitungen gefragt?
-* Was ist mit Kontroll- und Prüftools?
+* Ansätze zur Datenerfassen in Wikidata für die Katalogisierung
+  in Bibliotheken (siehe DNB-Veranstaltung zu Wikibase & GND)
+* Tools zur Batch-Bearbeitungen
+* Kontroll- und Prüftools
+* Oder ganz auf Wikidata/Wikibase umsteigen?
 
+## These: WikiCite ersetzt Bibliographische Datenbanken
 
-## Umfang der Katalogisierung
+Indiz: Wikipedia hat Nachschlagewerke ersetzt
 
-* Aufsatzkatalogisierung
-    * Thema für Bibliotheken? FIDs?
-    * WikiCite zeigt auf, dass es möglich ist
-* Katalogisierung von Zitationen
-    * Können Bibliotheken zu offenen Zitationsdaten beitragen?
-    * Zitationsdaten in Verbundkatalog speichern?
-    * Linked Open Citation Database (LOC-DB): [Clip](https://www.youtube.com/watch?v=k8ST-bX4BKs)
-
-## Ausblick
-
- 
-
-## These: WikiCite ist schneller
+## Argument: WikiCite ist schneller
 
 ------------------- ------------------- ---------------------
                     GBV/CBS             Wikidata/Wikibase
@@ -196,7 +213,7 @@ Direkte Bearbeitung auf Wikidata oder...
 Mit-Katalogisieren  Monate bis Jahre    Minuten
 Neue Kategorie      Monate bis Jahre    Tage bis Wochen
 Gesamtabzug         Wochen bis Monate   Tage bis Wochen
-Tools ausprobieren  ?                   Minuten bis Stunden
+Tools nutzen        ?                   Minuten bis Stunden
 ------------------- ------------------- ---------------------
 
 ## Qualitätssicherung in WikiCite
@@ -208,17 +225,12 @@ Tools ausprobieren  ?                   Minuten bis Stunden
 ## These: Qualitätssicherung in WikiCite ist nachhaltiger
 
 Bibliotheken        Wikidata
-
+------------------- ----------------------------
 Eingangskontrolle   Beständige Änderungen
+Beschränkungen      Datenanalyse & Korrekturen
+Was soll rein?      Was ist drin?
+Top-Down            Bottom-Up
 
-Datenkorrekturen
-analyse
 
- durch Qualitätskontrollen
-
-* Regeln zur Datenanalyse (was ist drin) statt Regeln (was soll rein)
-
-Präskriptiv vs. Deskript
-
-# Fragen / Diskussion / Antworten ?
+# Fragen & Diskussion
 
