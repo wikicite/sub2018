@@ -159,7 +159,7 @@ Scholia: <https://tools.wmflabs.org/scholia/>
 
 ## Qualitätssicherung
 
-* Eigene Beobachtungslist für Wikidata-Einträge\
+* Eigene Beobachtungslisten für Wikidata-Einträge\
   mit Benachrichtigung bei Änderungen
 
 * Einschränkungen von Werten von Eigenschaften
