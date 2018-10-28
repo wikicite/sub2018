@@ -58,7 +58,7 @@ Beispieldatensatz: [Q564783](http://www.wikidata.org/entity/Q564783) (SUB Götti
     * [FactGrid](https://blog.factgrid.de/) (Geschichtswissenchaft, Erfurt),
       siehe [Blogartikel](https://blog.wikimedia.de/2018/08/31/many-faces-of-wikibase-die-geschichte-der-illuminaten-als-datenbank-erschliessen/)
     * [Rhizome](https://catalog.rhizome.org/) (Digital Preservation, New York)
-    * Workshop [Authority Control meets Wikibase](https://wiki.dnb.de/display/GND/Authority+Control+meets+Wikibase) am 29. Oktober 2018 an der DNB
+    * Workshop [Authority Control meets Wikibase](https://wiki.dnb.de/display/GND/Authority+Control+meets+Wikibase), 29. Oktober 2018, DNB
 
 
 # Warum WikiCite?
@@ -125,7 +125,7 @@ Beispieldatensatz: [Q564783](http://www.wikidata.org/entity/Q564783) (SUB Götti
 
 ## Vorzeige-Projekt
 
-Scholia: <https://tools.wmflabs.org/scholia/>
+**Scholia:** <https://tools.wmflabs.org/scholia/>
 
 
 # Umsetzung von WikiCite
@@ -141,7 +141,7 @@ Scholia: <https://tools.wmflabs.org/scholia/>
 * **sourceMD, fatameh...** Import anhand DOI/PMID
 * **zotkat** Import aus Zotero (Literaturverwaltung)
 * **citation-js** Export aus Wikidata
-* **Mix'n'Match:** Abgleich mit externen Identifikatoren
+* **Mix'n'Match** Abgleich mit externen Identifikatoren
 * **OpenRefine 3.0** mit erweiterter Wikidata-Anbindung
 * ...
 
@@ -207,12 +207,17 @@ Indiz: Wikipedia hat Nachschlagewerke ersetzt
 
 ## Argument: WikiCite ist schneller
 
+\small
+
 ------------------- ------------------- ---------------------
                     GBV/CBS             Wikidata/Wikibase
 ------------------- ------------------- ---------------------
 Mit-Katalogisieren  Monate bis Jahre    Minuten
+
 Neue Kategorie      Monate bis Jahre    Tage bis Wochen
+
 Gesamtabzug         Wochen bis Monate   Tage bis Wochen
+
 Tools nutzen        ?                   Minuten bis Stunden
 ------------------- ------------------- ---------------------
 
